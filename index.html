@@ -6,6 +6,35 @@
   <meta name="description" content="performance007.sk – prémiový takticko-luxusný salón výkonných vozidiel. Predaj, dovoz a výkup vozidiel na objednávku." />
   <title>Performance 007 – Prémiový salón výkonných vozidiel</title>
 
+  <!-- Canonical URL pre Google -->
+  <link rel="canonical" href="https://performance007.sk/" />
+
+  <!-- ============================================
+       OPEN GRAPH (Facebook, WhatsApp, LinkedIn, Discord...)
+       Náhľad pri zdieľaní linku
+       ============================================ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://performance007.sk/" />
+  <meta property="og:title" content="Performance 007 – Prémiový salón výkonných vozidiel" />
+  <meta property="og:description" content="Predaj, dovoz a výkup výkonných a luxusných vozidiel. Import na objednávku, financovanie a diskrétna garáž v Košice-okolí." />
+  <meta property="og:image" content="https://performance007.sk/hero.webp" />
+  <meta property="og:image:alt" content="Performance 007 – luxusné vozidlo v tmavej garáži" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:locale" content="sk_SK" />
+  <meta property="og:site_name" content="performance007.sk" />
+
+  <!-- ============================================
+       TWITTER / X CARDS
+       ============================================ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Performance 007 – Prémiový salón výkonných vozidiel" />
+  <meta name="twitter:description" content="Predaj, dovoz a výkup výkonných a luxusných vozidiel. Import na objednávku a financovanie." />
+  <meta name="twitter:image" content="https://performance007.sk/hero.webp" />
+
+  <!-- Theme color pre mobilné prehliadače -->
+  <meta name="theme-color" content="#08090b" />
+
   <!-- Google fonts pre Neo-Noir 007 dizajn -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -757,21 +786,11 @@
 
   /* ===========================================================
      ZOZNAM VOZIDIEL.
-     Pridaj/odober/uprav záznamy. Polia:
-       id          – jednoznačný kód (bez medzier)
-       year        – rok výroby
-       make        – značka (napr. "BMW")
-       model       – model
-       price       – cena v EUR (číslo, bez medzier)
-       hp          – výkon v HP
-       drivetrain  – "RWD" | "AWD" | "4MATIC" | "xDrive" | "FWD"
-       zeroToHundred – zrýchlenie 0-100 v sekundách
-       mileage     – nájazd v km
-       image       – cesta k obrázku auta v /images
-       tags        – pole krátkych štítkov
-       dossier     – krátky popis vozidla
+     Vozidlá sa primárne načítavajú z vehicles.json (cez /admin
+     dashboard). Toto pole je len fallback, ak by JSON neexistoval
+     alebo zlyhal fetch (napr. pri otvorení súboru offline).
      =========================================================== */
-  const VEHICLES = [
+  let VEHICLES = [
     {
       id: "p007-db12-shadow",
       year: 2025,
@@ -1017,9 +1036,31 @@
   });
 
   // ---- Inicializácia ----
+  // Najprv vyrenderuj fallback (hardcoded) vozidlá
   renderVehicles();
   renderDossier();
   updateFinance();
+
+  // Potom fetchni najnovšie vozidlá z vehicles.json (editovateľné cez /admin)
+  fetch('vehicles.json', { cache: 'no-cache' })
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(data => {
+      if (Array.isArray(data?.vehicles) && data.vehicles.length > 0) {
+        VEHICLES = data.vehicles;
+        // Aktualizuj stav (ak prvé vozidlo bolo predtým iné)
+        if (!VEHICLES.find(v => v.id === state.selectedId)) {
+          state.selectedId = VEHICLES[0].id;
+        }
+        if (state.favorites.length === 0 && VEHICLES[0]) {
+          state.favorites = [VEHICLES[0].id];
+        }
+        renderVehicles();
+        renderDossier();
+      }
+    })
+    .catch(err => {
+      console.info('vehicles.json sa nenačítal, používam fallback:', err);
+    });
 </script>
 
 </body>
