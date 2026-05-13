@@ -64,10 +64,10 @@ collections:
                 widget: number
                 value_type: int
               - name: image
-                label: Fotka vozidla
-                widget: image
-                choose_url: false
-                required: false
+                label: Nazov fotky vozidla
+                widget: string
+                hint: "Najprv nahraj fotku do GitHub repa (Add file > Upload files), potom sem napis jej presny nazov. Napr: auto5.webp alebo nove-bmw.jpg"
+                default: "auto1.webp"
               - name: tags
                 label: Stitky
                 widget: list
