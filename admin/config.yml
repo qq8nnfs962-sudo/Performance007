@@ -1,1 +1,76 @@
+backend:
+  name: github
+  repo: qq8nnfs962-sudo/Performance007
+  branch: main
 
+media_folder: ""
+public_folder: "/"
+
+locale: en
+
+collections:
+  - name: vehicles
+    label: Vozidla
+    label_singular: Vozidlo
+    files:
+      - file: vehicles.json
+        name: vehicles_list
+        label: Zoznam vozidiel
+        fields:
+          - name: vehicles
+            label: Vozidla
+            label_singular: Vozidlo
+            widget: list
+            summary: "{{fields.year}} {{fields.make}} {{fields.model}}"
+            fields:
+              - name: id
+                label: ID
+                widget: string
+                hint: "Jednoznacny kod, bez medzier (napr. p007-bmw-m4)"
+              - name: year
+                label: Rok vyroby
+                widget: number
+                value_type: int
+              - name: make
+                label: Znacka
+                widget: string
+              - name: model
+                label: Model
+                widget: string
+              - name: price
+                label: Cena (EUR)
+                widget: number
+                value_type: int
+              - name: hp
+                label: Vykon (HP)
+                widget: number
+                value_type: int
+              - name: drivetrain
+                label: Pohon
+                widget: select
+                options:
+                  - RWD
+                  - AWD
+                  - 4MATIC
+                  - xDrive
+                  - FWD
+              - name: zeroToHundred
+                label: "0-100 km/h (sekundy)"
+                widget: number
+                value_type: float
+                step: 0.1
+              - name: mileage
+                label: Najazd (km)
+                widget: number
+                value_type: int
+              - name: image
+                label: Fotka vozidla
+                widget: image
+                choose_url: false
+              - name: tags
+                label: Stitky
+                widget: list
+                default: []
+              - name: dossier
+                label: Popis vozidla
+                widget: text
