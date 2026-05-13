@@ -1,60 +1,76 @@
 {
   "vehicles": [
     {
-      "id": "p007-db12-shadow",
-      "year": 2025,
-      "make": "Aston Martin",
-      "model": "DB12 Shadow Protocol",
-      "price": 137000,
       "hp": 680,
-      "drivetrain": "RWD",
-      "zeroToHundred": 3.6,
+      "price": 137000,
+      "model": "DB12 Shadow Protocol",
       "mileage": 1400,
+      "zeroToHundred": 3.6,
+      "dossier": "Luxusné cestovné vozidlo s karbónovými doplnkami a decentným interiérom.",
+      "make": "Aston Martin",
+      "tags": [
+        "Karbónový balík",
+        "Keramické brzdy",
+        "Zberateľský stav"
+      ],
+      "id": "p007-db12-shadow",
       "image": "auto1.webp",
-      "tags": ["Karbónový balík", "Keramické brzdy", "Zberateľský stav"],
-      "dossier": "Luxusné cestovné vozidlo s karbónovými doplnkami a decentným interiérom."
-    },
-    {
-      "id": "p007-m4-obsidian",
-      "year": 2024,
-      "make": "BMW",
-      "model": "M4 CSL Obsidian",
-      "price": 158000,
-      "hp": 550,
-      "drivetrain": "RWD",
-      "zeroToHundred": 3.7,
-      "mileage": 6200,
-      "image": "auto2.webp",
-      "tags": ["Okruhové nastavenie", "Kované disky", "Laserové LED"],
-      "dossier": "Ľahké kupé rýchlej reakcie naladené na presné trasy, horské prejazdy a víkendové okruhové operácie."
-    },
-    {
-      "id": "p007-gt63-radar",
       "year": 2025,
-      "make": "Mercedes-AMG",
-      "model": "GT 63 Radar Edition",
-      "price": 219000,
-      "hp": 639,
-      "drivetrain": "4MATIC",
-      "zeroToHundred": 3.2,
-      "mileage": 2500,
-      "image": "auto3.webp",
-      "tags": ["Manažérska strela", "Nočný paket", "Burmester"],
-      "dossier": "Diskrétna manažérska strela s trakciou do každého počasia, kultivovanosťou na dlhé trasy a okamžitou akceleračnou autoritou."
+      "drivetrain": "RWD"
     },
     {
-      "id": "p007-911-steel",
-      "year": 2023,
-      "make": "Porsche",
-      "model": "911 Turbo S Steel Line",
-      "price": 242000,
+      "hp": 550,
+      "price": 99000,
+      "model": "M4 CSL Obsidian",
+      "mileage": 6200,
+      "zeroToHundred": 3.7,
+      "dossier": "Ľahké kupé rýchlej reakcie naladené na presné trasy, horské prejazdy a víkendové okruhové operácie.",
+      "make": "BMW",
+      "tags": [
+        "Okruhové nastavenie",
+        "Kované disky",
+        "Laserové LED"
+      ],
+      "id": "p007-m4-obsidian",
+      "image": "auto2.webp",
+      "year": 2024,
+      "drivetrain": "RWD"
+    },
+    {
+      "hp": 639,
+      "price": 219000,
+      "model": "GT 63 Radar Edition",
+      "mileage": 2500,
+      "zeroToHundred": 3.2,
+      "dossier": "Diskrétna manažérska strela s trakciou do každého počasia, kultivovanosťou na dlhé trasy a okamžitou akceleračnou autoritou.",
+      "make": "Mercedes-AMG",
+      "tags": [
+        "Manažérska strela",
+        "Nočný paket",
+        "Burmester"
+      ],
+      "id": "p007-gt63-radar",
+      "image": "auto3.webp",
+      "year": 2025,
+      "drivetrain": "4MATIC"
+    },
+    {
       "hp": 650,
-      "drivetrain": "AWD",
-      "zeroToHundred": 2.7,
+      "price": 242000,
+      "model": "911 Turbo S Steel Line",
       "mileage": 4800,
+      "zeroToHundred": 2.7,
+      "dossier": "Kompaktný presný nástroj s drvivým štartom a každodennou použiteľnosťou na diskrétne vysokorýchlostné presuny.",
+      "make": "Porsche",
+      "tags": [
+        "Sport Chrono",
+        "PCCB",
+        "Zdvih prednej nápravy"
+      ],
+      "id": "p007-911-steel",
       "image": "auto4.webp",
-      "tags": ["Sport Chrono", "PCCB", "Zdvih prednej nápravy"],
-      "dossier": "Kompaktný presný nástroj s drvivým štartom a každodennou použiteľnosťou na diskrétne vysokorýchlostné presuny."
+      "year": 2023,
+      "drivetrain": "AWD"
     }
   ]
 }
