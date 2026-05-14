@@ -1,60 +1,76 @@
 {
   "vehicles": [
     {
-      "id": "p007-supra-mk4",
-      "year": 1995,
-      "make": "Toyota",
-      "model": "Supra MK4 Twin Turbo",
-      "price": 95000,
-      "hp": 330,
-      "drivetrain": "RWD",
-      "zeroToHundred": 4.6,
-      "mileage": 95000,
-      "image": "supra-mk4.webp",
-      "tags": ["JDM Legenda", "2JZ Twin Turbo", "Zlate BBS LM"],
-      "dossier": "Ikonicka Toyota Supra MK4 s legendarnym motorom 2JZ-GTE. Zberatelsky kusok pre fanusikov japonskeho tuningu - tisicke konskych sil potencial."
-    },
-    {
-      "id": "p007-nissan-300zx",
-      "year": 1994,
-      "make": "Nissan",
-      "model": "300ZX Twin Turbo Z32",
-      "price": 38000,
-      "hp": 280,
-      "drivetrain": "RWD",
-      "zeroToHundred": 5.7,
-      "mileage": 120000,
-      "image": "nissan-300zx.webp",
-      "tags": ["JDM Klasika", "VG30DETT", "T-Top strecha"],
-      "dossier": "Legendarny Nissan 300ZX Twin Turbo - GT vozidlo 90-tych rokov s nadcasovym dizajnom, T-Top strechou a brutalnym tunable potencialom."
-    },
-    {
-      "id": "p007-vw-corrado",
-      "year": 1995,
-      "make": "Volkswagen",
-      "model": "Corrado VR6 Storm",
-      "price": 24000,
-      "hp": 190,
-      "drivetrain": "FWD",
-      "zeroToHundred": 6.9,
-      "mileage": 140000,
-      "image": "vw-corrado.webp",
-      "tags": ["VR6 motor", "Aktivny spojler", "Wide body"],
-      "dossier": "VW Corrado VR6 Storm - kultove kupe s charakteristickym VR6 motorom a aerodynamickym aktivnym spojlerom. Wide body verzia pre zberatelov."
-    },
-    {
-      "id": "p007-aston-dbs",
-      "year": 2010,
-      "make": "Aston Martin",
-      "model": "DBS V12 Carbon Edition",
-      "price": 145000,
       "hp": 510,
-      "drivetrain": "RWD",
-      "zeroToHundred": 4.3,
+      "price": 145000,
+      "model": "DBS V12 Carbon Edition",
       "mileage": 32000,
+      "zeroToHundred": 4.3,
+      "dossier": "Aston Martin DBS - britsky GT supercar s V12 atmosferickym motorom. Auto Jamesa Bonda z filmov Casino Royale a Quantum of Solace - cista britska klasika.",
+      "make": "Aston Martin",
+      "tags": [
+        "V12 6.0L",
+        "Karbonove prvky",
+        "Casino Royale"
+      ],
+      "id": "p007-aston-dbs",
       "image": "aston-dbs.png",
-      "tags": ["V12 6.0L", "Karbonove prvky", "Casino Royale"],
-      "dossier": "Aston Martin DBS - britsky GT supercar s V12 atmosferickym motorom. Auto Jamesa Bonda z filmov Casino Royale a Quantum of Solace - cista britska klasika."
+      "year": 2010,
+      "drivetrain": "RWD"
+    },
+    {
+      "hp": 330,
+      "price": 95000,
+      "model": "Supra MK4 Twin Turbo",
+      "mileage": 95000,
+      "zeroToHundred": 4.6,
+      "dossier": "Ikonicka Toyota Supra MK4 s legendarnym motorom 2JZ-GTE. Zberatelsky kusok pre fanusikov japonskeho tuningu - tisicke konskych sil potencial.",
+      "make": "Toyota",
+      "tags": [
+        "JDM Legenda",
+        "2JZ Twin Turbo",
+        "Zlate BBS LM"
+      ],
+      "id": "p007-supra-mk4",
+      "image": "supra-mk4.webp",
+      "year": 1995,
+      "drivetrain": "RWD"
+    },
+    {
+      "hp": 190,
+      "price": 24000,
+      "model": "Corrado VR6 Storm",
+      "mileage": 140000,
+      "zeroToHundred": 6.9,
+      "dossier": "VW Corrado VR6 Storm - kultove kupe s charakteristickym VR6 motorom a aerodynamickym aktivnym spojlerom. Wide body verzia pre zberatelov.",
+      "make": "Volkswagen",
+      "tags": [
+        "VR6 motor",
+        "Aktivny spojler",
+        "Wide body"
+      ],
+      "id": "p007-vw-corrado",
+      "image": "vw-corrado.webp",
+      "year": 1995,
+      "drivetrain": "FWD"
+    },
+    {
+      "hp": 280,
+      "price": 38000,
+      "model": "300ZX Twin Turbo Z32",
+      "mileage": 120000,
+      "zeroToHundred": 5.7,
+      "dossier": "Legendarny Nissan 300ZX Twin Turbo - GT vozidlo 90-tych rokov s nadcasovym dizajnom, T-Top strechou a brutalnym tunable potencialom.",
+      "make": "Nissan",
+      "tags": [
+        "JDM Klasika",
+        "VG30DETT",
+        "T-Top strecha"
+      ],
+      "id": "p007-nissan-300zx",
+      "image": "nissan-300zx.webp",
+      "year": 1994,
+      "drivetrain": "RWD"
     }
   ]
 }
