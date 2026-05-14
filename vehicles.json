@@ -1,76 +1,60 @@
 {
   "vehicles": [
     {
-      "hp": 680,
-      "price": 137000,
-      "model": "DB12 Shadow Protocol",
-      "mileage": 1400,
-      "zeroToHundred": 3.6,
-      "dossier": "Luxusné cestovné vozidlo s karbónovými doplnkami a decentným interiérom.",
+      "id": "p007-supra-mk4",
+      "year": 1995,
+      "make": "Toyota",
+      "model": "Supra MK4 Twin Turbo",
+      "price": 95000,
+      "hp": 330,
+      "drivetrain": "RWD",
+      "zeroToHundred": 4.6,
+      "mileage": 95000,
+      "image": "supra-mk4.webp",
+      "tags": ["JDM Legenda", "2JZ Twin Turbo", "Zlate BBS LM"],
+      "dossier": "Ikonicka Toyota Supra MK4 s legendarnym motorom 2JZ-GTE. Zberatelsky kusok pre fanusikov japonskeho tuningu - tisicke konskych sil potencial."
+    },
+    {
+      "id": "p007-nissan-300zx",
+      "year": 1994,
+      "make": "Nissan",
+      "model": "300ZX Twin Turbo Z32",
+      "price": 38000,
+      "hp": 280,
+      "drivetrain": "RWD",
+      "zeroToHundred": 5.7,
+      "mileage": 120000,
+      "image": "nissan-300zx.webp",
+      "tags": ["JDM Klasika", "VG30DETT", "T-Top strecha"],
+      "dossier": "Legendarny Nissan 300ZX Twin Turbo - GT vozidlo 90-tych rokov s nadcasovym dizajnom, T-Top strechou a brutalnym tunable potencialom."
+    },
+    {
+      "id": "p007-vw-corrado",
+      "year": 1995,
+      "make": "Volkswagen",
+      "model": "Corrado VR6 Storm",
+      "price": 24000,
+      "hp": 190,
+      "drivetrain": "FWD",
+      "zeroToHundred": 6.9,
+      "mileage": 140000,
+      "image": "vw-corrado.webp",
+      "tags": ["VR6 motor", "Aktivny spojler", "Wide body"],
+      "dossier": "VW Corrado VR6 Storm - kultove kupe s charakteristickym VR6 motorom a aerodynamickym aktivnym spojlerom. Wide body verzia pre zberatelov."
+    },
+    {
+      "id": "p007-aston-dbs",
+      "year": 2010,
       "make": "Aston Martin",
-      "tags": [
-        "Karbónový balík",
-        "Keramické brzdy",
-        "Zberateľský stav"
-      ],
-      "id": "p007-db12-shadow",
-      "image": "auto1.webp",
-      "year": 2025,
-      "drivetrain": "RWD"
-    },
-    {
-      "hp": 550,
-      "price": 99000,
-      "model": "M4 CSL Obsidian",
-      "mileage": 6200,
-      "zeroToHundred": 3.7,
-      "dossier": "Ľahké kupé rýchlej reakcie naladené na presné trasy, horské prejazdy a víkendové okruhové operácie.",
-      "make": "BMW",
-      "tags": [
-        "Okruhové nastavenie",
-        "Kované disky",
-        "Laserové LED"
-      ],
-      "id": "p007-m4-obsidian",
-      "image": "auto2.webp",
-      "year": 2024,
-      "drivetrain": "RWD"
-    },
-    {
-      "hp": 639,
-      "price": 219000,
-      "model": "GT 63 Radar Edition",
-      "mileage": 2500,
-      "zeroToHundred": 3.2,
-      "dossier": "Diskrétna manažérska strela s trakciou do každého počasia, kultivovanosťou na dlhé trasy a okamžitou akceleračnou autoritou.",
-      "make": "Mercedes-AMG",
-      "tags": [
-        "Manažérska strela",
-        "Nočný paket",
-        "Burmester"
-      ],
-      "id": "p007-gt63-radar",
-      "image": "auto3.webp",
-      "year": 2025,
-      "drivetrain": "4MATIC"
-    },
-    {
-      "hp": 650,
-      "price": 242000,
-      "model": "911 Turbo S Steel Line",
-      "mileage": 4800,
-      "zeroToHundred": 2.7,
-      "dossier": "Kompaktný presný nástroj s drvivým štartom a každodennou použiteľnosťou na diskrétne vysokorýchlostné presuny.",
-      "make": "Porsche",
-      "tags": [
-        "Sport Chrono",
-        "PCCB",
-        "Zdvih prednej nápravy"
-      ],
-      "id": "p007-911-steel",
-      "image": "auto4.webp",
-      "year": 2023,
-      "drivetrain": "AWD"
+      "model": "DBS V12 Carbon Edition",
+      "price": 145000,
+      "hp": 510,
+      "drivetrain": "RWD",
+      "zeroToHundred": 4.3,
+      "mileage": 32000,
+      "image": "aston-dbs.webp",
+      "tags": ["V12 6.0L", "Karbonove prvky", "Casino Royale"],
+      "dossier": "Aston Martin DBS - britsky GT supercar s V12 atmosferickym motorom. Auto Jamesa Bonda z filmov Casino Royale a Quantum of Solace - cista britska klasika."
     }
   ]
 }
